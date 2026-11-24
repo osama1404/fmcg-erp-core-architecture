@@ -1,0 +1,35 @@
+{
+  "name": "fmcg-erp-core-architecture",
+  "version": "1.0.0",
+  "description": "Multi-tenant wholesale FMCG ERP backend: FEFO inventory batch allocation, driver cash/stock custody ledger, bounced-check auto credit freeze, and UBL 2.1 e-invoicing.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "seed": "ts-node src/db/seed.ts",
+    "test": "node dist/tests/fmcg.test.js"
+  },
+  "keywords": [
+    "erp",
+    "fmcg",
+    "multi-tenant",
+    "fefo",
+    "inventory-management",
+    "postgresql",
+    "supabase",
+    "van-sales",
+    "e-invoicing",
+    "typescript"
+  ],
+  "author": "Osama Alsayed <osama.omar.alsayed@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5"
+  }
+}
